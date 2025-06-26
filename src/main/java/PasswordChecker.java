@@ -1,5 +1,5 @@
 public class PasswordChecker {
-    private int minLength;
+    public int minLength;
     private int maxRepeats;
     public void setMinLength(int len) {
         if (len < 0) {
