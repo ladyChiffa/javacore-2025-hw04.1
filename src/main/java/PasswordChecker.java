@@ -1,6 +1,15 @@
 public class PasswordChecker {
-    public int minLength;
+    private int minLength;
     private int maxRepeats;
+
+    public int getMinLength() {
+        return minLength;
+    }
+
+    public int getMaxRepeats() {
+        return maxRepeats;
+    }
+
     public void setMinLength(int len) {
         if (len < 0) {
             throw new IllegalArgumentException("Нельзя передавать значение <0, передали: " + len);
